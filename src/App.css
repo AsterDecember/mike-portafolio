@@ -87,9 +87,13 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
-
+.ant-card-body *{
+  margin-bottom: .5rem !important;
+}
+.proyectsDiv .ant-card {
+  margin: 1rem !important;
+}
 .pTitle{
   font-weight: bold;
 }
