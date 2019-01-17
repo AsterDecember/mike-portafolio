@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
-import { Layout } from 'antd';
+import { Layout, Tabs } from 'antd';
 import FooterComponent from './FooterComponent'
+import AboutComponent from './AboutComponent'
+import EventsComponent from './EventsComponent'
 const {
-  Header, Footer, Sider, Content,
+     Footer, Content,
 } = Layout;
+const TabPane = Tabs.TabPane;
 
+function callback(key) {
+  console.log(key);
+}
 
 export default class Home extends Component {
     render() {
@@ -12,10 +18,16 @@ export default class Home extends Component {
             <div>
                 <Layout>
                     <div className='headBanner'>Header</div>
-                    <Content>Content</Content>
-                    <Footer><FooterComponent /></Footer>
+                    <Content>
+                        <Tabs defaultActiveKey="1" onChange={callback}>
+                            <TabPane tab="About Me" key="1"><AboutComponent /></TabPane>
+                            <TabPane tab="Events" key="2"><EventsComponent /></TabPane>
+                            <TabPane tab="Proyects" key="3">Content of Tab Pane 3</TabPane>
+                        </Tabs>
+                    </Content>
+                <Footer><FooterComponent /></Footer>
                 </Layout>
-            </div>
+            </div >
         )
     }
 }
