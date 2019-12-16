@@ -7,6 +7,18 @@ const EventsComponent = () => {
         <h2>Relevant Events</h2>
             <Timeline  mode="alternate">
                 <Timeline.Item>
+                    <p className="pTitle"><Avatar shape="square" src="https://cdn.qwiklabs.com/xtrqRr7DTWbkGgJtOBpaZvoZm1uovyQXkOFx%2BNV2spA%3D" />Qwiklabs - April 2019</p>
+                    <p>Kubernetes in the Google Cloud</p>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <p className="pTitle"><Avatar shape="square" src="https://cdn.qwiklabs.com/J7w%2BiG9bhSHNY4X72mtHLC%2F9tjLpwxheGh3O3hMfXlA%3D" />Qwiklabs - April 2019</p>
+                    <p> Cloud Architecture</p>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <p className="pTitle"><Avatar shape="square" src="https://cdn.qwiklabs.com/FZtxMbNgoL6eRRO%2BtlXioONLVKrf8h50dskt8i81n9c%3D" />Qwiklabs - April 2019</p>
+                    <p>GCP Essentials</p>
+                </Timeline.Item>
+                <Timeline.Item>
                     <p className="pTitle"><Avatar shape="square" src="https://joseramonsahuquillo.com/wp-content/uploads/2016/10/ironhack.png" />IronHack November 2018 - January 2019</p>
                     <p> Full Stack Web Developer MERN Stack</p>
                 </Timeline.Item>
