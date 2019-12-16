@@ -4,6 +4,21 @@ import FooterComponent from './FooterComponent'
 import AboutComponent from './AboutComponent'
 import EventsComponent from './EventsComponent'
 import ProyectsComponent from './ProyectsComponent'
+import HeaderComponent from './HeaderComponent'
+import Particles from './Particles'
+
+const styles = {
+    root: {
+        fontFamily: "sans-serif",
+        textAlign: "center",
+        height: "100%",
+        background: "#222",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+    }
+};
+
 const {
     Footer, Content,
 } = Layout;
@@ -17,8 +32,11 @@ export default class Home extends Component {
     render() {
         return (
             <div>
+                <div style={styles.root}>
+                    <Particles />
+                </div>
                 <Layout>
-                    <div className='headBanner'>Header</div>
+
                     <Content>
                         <Tabs defaultActiveKey="1" onChange={callback}>
                             <TabPane tab="About Me" key="1"><AboutComponent /></TabPane>
